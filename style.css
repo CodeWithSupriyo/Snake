@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans';
+}
+
+body {
+  background-color: #AFC3DE;
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 0 0 10px 10px;
+  background-color: #1A9200;
+}
+
+.score-Display {
+  color: #fff;
+  display: flex;
+  margin-top: 27vh;
+  font-size: 5vw;
+  height: 4vh;
+  width: 62%;
+  margin-left: 19vw;
+  background-color: #24262D;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.score-Display p {
+  margin-top: 0.5vh;
+}
+
+.score-Display #score {
+  margin-top: 0.5vh;
+  margin-left: 2vw;
+  color: rgba(236, 167, 6, 1);
+}

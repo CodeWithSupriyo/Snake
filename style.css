@@ -47,7 +47,7 @@ canvas {
 .score-Display #score {
   margin-top: 0.5vh;
   margin-left: 2vw;
-  color: rgba(236, 167, 6, 1);
+  color: #FFA800;
 }
 
 h1 {

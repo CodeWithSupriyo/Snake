@@ -1,8 +1,12 @@
 const canvas = document.querySelector('canvas')
+const score = document.querySelector('#score')
+const btnTop = document.querySelector("#btnTop")
+const btnLeft = document.querySelector("#btnLeft")
+const btnBottom = document.querySelector("#btnBottom")
+const btnRight = document.querySelector("#btnRight")
 const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 600
 const CANVAS_HEIGHT = canvas.height = 600
-const score = document.querySelector('#score')
 const eachBox = 20
 const interval = 175
 const snakeColor = '#0048EA'
@@ -101,5 +105,26 @@ document.addEventListener("keydown", (event) => {
     direction = 'down'
   } else if ((keyPressed == 'd' || keyPressed === 'ArrowRight') && direction !== 'left') {
     direction = 'right'
+  }
+})
+
+btnTop.addEventListener("click", function(){
+  if (direction !== 'down') {
+    direction = 'up'
+  }
+})
+btnLeft.addEventListener("click", function(){
+  if (direction !== 'left') {
+    direction = 'right'
+  }
+})
+btnBottom.addEventListener("click", function(){
+  if (direction !== 'up') {
+    direction = 'down'
+  }
+})
+btnRight.addEventListener("click", function(){
+  if (direction !== 'right') {
+    direction = 'left'
   }
 })

@@ -24,14 +24,13 @@ canvas {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  border-radius: 0 0 10px 10px;
   background-color: #1A9200;
 }
 
 .score-Display {
   color: #fff;
   display: flex;
-  margin-top: 27vh;
+  margin-top: 24vh;
   font-size: 5vw;
   height: 4vh;
   width: 62%;
@@ -49,4 +48,96 @@ canvas {
   margin-top: 0.5vh;
   margin-left: 2vw;
   color: rgba(236, 167, 6, 1);
+}
+
+h1 {
+  display: none;
+}
+
+#btnTop {
+  background-color: #24262D;
+  width: 15vw;
+  height: 5vh;
+  margin-top: 34vh;
+  margin-left: 19.5vw;
+  border-radius: 0 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnTop img{
+  font-size: 5vh;
+  width: 10vw;
+  display: flex;
+  margin-top: 1vh;
+}
+#btnLeft {
+  background-color: #24262D;
+  width: 15vw;
+  height: 3.75vh;
+  margin-left: 34.5vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 69.5%;
+}
+
+#btnLeft img{
+  font-size: 5vh;
+  width: 10vw;
+  display: flex;
+}
+#btnBottom {
+  background-color: #24262D;
+  width: 15vw;
+  height: 3.75vh;
+  margin-left: 49.5vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 69.5%;
+}
+
+#btnBottom img{
+  font-size: 5vh;
+  width: 10vw;
+  display: flex;
+}
+
+#btnRight {
+  background-color: #24262D;
+  width: 16vw;
+  height: 3.75vh;
+  margin-left: 64.5vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 69.5%;
+  border-radius: 0 0 10px 0;
+}
+
+#btnRight img{
+  font-size: 5vh;
+  width: 10vw;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  canvas{
+    display: none;
+  }
+  .score-Display{
+    display: none;
+  }
+  
+  h1{
+    display: block;
+  }
 }
